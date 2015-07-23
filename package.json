@@ -12,8 +12,10 @@
   "dependencies": {
     "babelify": "^6.1.2",
     "browserify": "^10.2.4",
+    "griddle-react": "^0.2.13",
     "react": "^0.13.3",
     "react-datagrid": "^1.1.14",
+    "underscore": "^1.8.3",
     "watchify": "^3.2.2"
   },
   "browserify": {
