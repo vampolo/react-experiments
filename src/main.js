@@ -2,7 +2,7 @@ var React = require('react');
 var DataGrid = require('react-datagrid');
 var data = require('../data/sysdig.json');
 import HelloWorld from './test';
-
+import Table from './table.jsx';
 
 // var data = [
 //     {id: 1, title: 'test'},
@@ -44,7 +44,13 @@ React.render(
     document.getElementById('content-table')
 );
 
-
+React.render(<Table
+             results={data.events}
+             showFilter={true}
+             showSettings={true}
+             enableInfiniteScroll={true}
+             useFixedHeader={true}
+             bodyHeight={400}/>, document.getElementById('griddle-table'));
 // React.render(
 //         <HelloWorld/>,
 //     document.getElementById('hello-world')
