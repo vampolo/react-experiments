@@ -1,6 +1,6 @@
 var React = require('react');
 var DataGrid = require('react-datagrid');
-var data = require('../../sysdig.json');
+var data = require('../data/sysdig.json');
 import HelloWorld from './test';
 
 
@@ -31,7 +31,7 @@ var SysdigTable = React.createClass({
 	    idProperty='id'
 	    dataSource={data.events}
 	    columns={columns}
-	    style={{height: 1000}}/>
+	    style={{height: 500}}/>
                 <div>total number of events: {data.events.length}</div>
                 </div>
         );
