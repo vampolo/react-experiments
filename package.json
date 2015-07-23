@@ -1,0 +1,24 @@
+{
+  "name": "react-table-experiment",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "./node_modules/.bin/watchify -d src/main.js -o bundle.js -v",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.4",
+    "react": "^0.13.3",
+    "react-datagrid": "^1.1.14",
+    "watchify": "^3.2.2"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
