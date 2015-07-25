@@ -27,15 +27,7 @@ function createDataObj(event) {
     return { label: event[0], value: event[1] };
 }
 
-console.log(data.events[0]);
 var parsedData = _.chain(data.events).countBy('proc.name').pairs().map(createDataObj).value();
-
-var treemapData = [
-  {label: "China", value: 1364},
-  {label: "India", value: 1296},
-  {label: "Brazil", value: 203}
-];
-
 
 var SysdigTable = React.createClass({
     render: function() {
