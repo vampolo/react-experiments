@@ -1,51 +1,25 @@
 var React = require('react');
-var DataGrid = require('react-datagrid');
+var Griddle = require('griddle-react');
+var dataEvents = require('../data/sysdig.json');
 
 import Table from './table.jsx';
 import SysdigChart from './chart.jsx';
-import SysdigData from './data.jsx';
+import Data from './data.jsx';
 
-var columns = [
-    {name: 'evt.cpu'},
-    {name: 'evt.dir'},
-    {name: 'evt.info'},
-    {name: 'evt.num'},
-    {name: 'evt.reltime'},
-    {name: 'evt.type'},
-    {name: 'fd.num'},
-    {name: 'proc.name'},
-    {name: 'proc.pid'},
-    {name: 'thread.pid'}
-];
-
-var SysdigTable = React.createClass({
-    render: function() {
-        return (
-                <div className="sysdigtable">
-                <DataGrid
-            	    idProperty='id'
-            	    dataSource={SysdigData.events}
-            	    columns={columns}
-            	    style={{height: 500}}/>
-                <div>total number of events: {SysdigData.events.length}</div>
-                </div>
-        );
-    }
-});
-
+var SysdigData = new Data(dataEvents);
 
 React.render(
-     <SysdigTable/>,
+     <Table.SysdigTable data={SysdigData.events}/>,
     document.getElementById('content-table')
 );
 
 React.render(
-    <SysdigChart.Treemap data={SysdigData.name}/>,
+    <SysdigChart.Treemap data={SysdigData.countOccurrence('proc.name')}/>,
     document.getElementById('treemap-chart')
 );
 
 React.render(
-    <Table
+    <Griddle
         results={SysdigData.events}
         showFilter={true}
         showSettings={true}

@@ -1,11 +1,22 @@
 var _ = require('underscore');
 
-var SysdigData = require('../data/sysdig.json');
+class SysdigData {
+    constructor(data) {
+        this.data = data;
+    }
 
-function createDataObj(event) {
-    return { label: event[0], value: event[1] };
-}
+    get events() {
+        return this.data.events;
+    }
 
-SysdigData.proc_name = _.chain(SysdigData.events).countBy('proc.name').pairs().map(createDataObj).value();
+    countOccurrence(eventName) {
+        function createDataObj(event) {
+            return { label: event[0], value: event[1] };
+        }
+
+        return _.chain(this.events).countBy(eventName).pairs().map(createDataObj).value();
+    }
+};
+
 
 export default SysdigData;
