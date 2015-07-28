@@ -25,8 +25,8 @@ class BarChart extends SysdigChartD3 {
         return (
             <rd3.BarChart
               data={this.props.data}
-              width={500}
-              height={200}
+              width={600}
+              height={400}
               fill={"#3182bd"}
               title={this.props.name || "Bar Chart"}/>
         );

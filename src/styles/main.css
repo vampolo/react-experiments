@@ -47,6 +47,11 @@ body {
     margin: 20px;
 }
 
+.inline-chart {
+    display: inline-block;
+    padding-right: 30px;
+}
+
 #footer {
     color: #FFFFFF;
     position: fixed;
