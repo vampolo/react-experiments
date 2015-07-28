@@ -10,11 +10,11 @@ class SysdigData {
     }
 
     countOccurrence(eventName) {
-        function createDataObj(event) {
-            return { label: event[0], value: event[1] };
-        }
-
-        return _.chain(this.events).countBy(eventName).pairs().map(createDataObj).value();
+        return _.chain(this.events)
+                    .countBy(eventName)
+                    .pairs()
+                    .map(e => ({label: e[0], value: e[1]}))
+                    .value();
     }
 };
 
