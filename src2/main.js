@@ -34,10 +34,10 @@ var SysdigTable = React.createClass({
         return (
                 <div className="sysdigtable">
                 <DataGrid
-	    idProperty='id'
-	    dataSource={data.events}
-	    columns={columns}
-	    style={{height: 500}}/>
+            idProperty='id'
+            dataSource={data.events}
+            columns={columns}
+            style={{height: 500}}/>
                 <div>total number of events: {data.events.length}</div>
                 </div>
         );
@@ -47,35 +47,36 @@ var SysdigTable = React.createClass({
 var SysdigTreemap = React.createClass({
     render: function() {
         return (
-            <Treemap
-              data={parsedData}
-              width={850}
-              height={650}
-              textColor="#484848"
-              fontSize="10px"
-              title="Process name"/>
+                <Treemap
+            data={parsedData}
+            width={1024}
+            height={650}
+            textColor="#484848"
+            fontSize="10px"
+            title="Process name"/>
         );
     }
 });
 
 
 React.render(
-     <SysdigTable/>,
+        <SysdigTable/>,
     document.getElementById('content-table')
 );
 
+
 React.render(
-    <SysdigTreemap/>,
-    document.getElementById('treemap-chart')
+        <Table
+    results={data.events}
+    showFilter={true}
+    showSettings={true}
+    enableInfiniteScroll={true}
+    useFixedHeader={true}
+    bodyHeight={400}/>,
+    document.getElementById('griddle-table')
 );
 
 React.render(
-    <Table
-        results={data.events}
-        showFilter={true}
-        showSettings={true}
-        enableInfiniteScroll={true}
-        useFixedHeader={true}
-        bodyHeight={400}/>,
-    document.getElementById('griddle-table')
+        <SysdigTreemap/>,
+    document.getElementById('treemap-chart')
 );
