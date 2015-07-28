@@ -1,0 +1,60 @@
+body {
+    background-color: #efefef;
+}
+
+#header {
+    height: 31px;
+    min-height: 31px;
+    background-color: #e34e35;
+    color: #FFFFFF;
+}
+
+#header .btn {
+    padding: 0 10px;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+}
+
+#header .btn:hover,
+#header .btn:focus,
+#header .btn:active {
+    outline: 0;
+}
+
+#header .btn img {
+    width: 31px;
+    height: 31px;
+    padding: 3px;
+    margin-top: -1px;
+}
+
+#header span {
+    font-weight: 700;
+    line-height: 31px;
+    font-size: 14px;
+}
+
+#content {
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+
+.card {
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+    padding: 20px;
+    margin: 20px;
+}
+
+#footer {
+    color: #FFFFFF;
+    position: fixed;
+    z-index: 1000;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 31px;
+    padding: 0px;
+    background-color: #4d4d4d;
+}
