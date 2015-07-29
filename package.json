@@ -11,12 +11,18 @@
   "license": "ISC",
   "dependencies": {
     "babelify": "^6.1.2",
+    "body-parser": "^1.13.2",
     "bootstrap": "^3.3.5",
     "browserify": "^10.2.4",
+    "express": "^4.13.1",
     "griddle-react": "^0.2.13",
+    "material-ui": "^0.10.1",
     "react": "^0.13.3",
     "react-d3": "^0.3.1",
     "react-datagrid": "^1.1.14",
+    "react-grid-layout": "^0.8.3",
+    "react-tap-event-plugin": "^0.1.7",
+    "request": "^2.60.0",
     "underscore": "^1.8.3",
     "watchify": "^3.2.2"
   },
