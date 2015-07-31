@@ -45,7 +45,7 @@ class App extends Component {
     return (
       <div className={styles.app + ' container'}>
         <div className="jumbotron">
-          <h1>React Redux Example</h1>
+          <h1>React Sysdig Experiment</h1>
 
           <p>
             by <a href="https://twitter.com/erikras" target="_blank">@erikras</a>
