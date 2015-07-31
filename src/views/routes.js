@@ -8,6 +8,7 @@ import Login from 'views/Login';
 import NotFound from 'views/NotFound';
 import Redirect from 'views/Redirect';
 import Table from 'views/Table';
+import Charts from 'views/Charts';
 
 export default (
   <Route component={App}>
@@ -17,6 +18,7 @@ export default (
     <Route path="/login" component={Login}/>
     <Route path="/redirect" component={Redirect} onEnter={Redirect.onEnter}/>
     <Route path="/table" component={Table}/>
+    <Route path="/charts" component={Charts}/>
     <Route path="*" component={NotFound}/>
   </Route>
 );
