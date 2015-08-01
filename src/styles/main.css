@@ -52,6 +52,19 @@ body {
     padding-right: 30px;
 }
 
+.spectrogram-wrapper{padding: 20px 0 20px 0;width: 800px;margin: 0 auto;}
+.spectrogram-wrapper .calibration{margin-bottom: 15px;width:400px;}
+.spectrogram-wrapper .calibration .group{display: inline-block;}
+.spectrogram-wrapper .calibration .description{width:220px; margin-left: 75px; }
+.spectrogram-wrapper .calibration .description>label:first-child{float:left;}
+.spectrogram-wrapper .calibration .description>label:last-child{float:right;}
+.spectrogram-wrapper .calibration>.display-control{float:right;}
+.spectrogram-wrapper .calibration>.display-control label{vertical-align: top;}
+
+.spectrogram-wrapper .spectrogram .axis path{display: none;}
+.spectrogram-wrapper .spectrogram .axis line{fill: none;stroke: #000;shape-rendering: crispEdges;}
+.spectrogram-wrapper .spectrogram .axis text{font-size: 12px}
+
 #footer {
     color: #FFFFFF;
     position: fixed;

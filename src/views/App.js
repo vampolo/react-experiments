@@ -68,6 +68,7 @@ class App extends Component {
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/table">Sysdig Table</Link></li>
               <li><Link to="/charts">Charts</Link></li>
+              <li><Link to="/map">Map</Link></li>
               <li><Link to="/redirect">Redirect to Home</Link></li>
               {!user && <li><Link to="/login">Login</Link></li>}
               {user && <li className="logout-link"><a href="/logout" onClick={::this.handleLogout}>Logout</a></li>}
