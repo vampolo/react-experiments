@@ -52,6 +52,19 @@ body {
     padding-right: 30px;
 }
 
+.spectrogram-wrapper{padding: 20px 0 20px 0;width: 800px;margin: 0 auto;}
+.spectrogram-wrapper .calibration{margin-bottom: 15px;width:400px;}
+.spectrogram-wrapper .calibration .group{display: inline-block;}
+.spectrogram-wrapper .calibration .description{width:220px; margin-left: 75px; }
+.spectrogram-wrapper .calibration .description>label:first-child{float:left;}
+.spectrogram-wrapper .calibration .description>label:last-child{float:right;}
+.spectrogram-wrapper .calibration>.display-control{float:right;}
+.spectrogram-wrapper .calibration>.display-control label{vertical-align: top;}
+
+.spectrogram-wrapper .spectrogram .axis path{display: none;}
+.spectrogram-wrapper .spectrogram .axis line{fill: none;stroke: #000;shape-rendering: crispEdges;}
+.spectrogram-wrapper .spectrogram .axis text{font-size: 12px}
+
 #footer {
     color: #FFFFFF;
     position: fixed;
@@ -62,4 +75,53 @@ body {
     height: 31px;
     padding: 0px;
     background-color: #4d4d4d;
+}
+
+.table-header {
+
+}
+
+.table-header > div {
+    display: inline-block;
+}
+
+.table-header h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.table-header .filter-bar {
+    float: right;
+}
+
+.dt {
+
+}
+
+.dt .thead {
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.dt .tbody .tr .td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 30px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.dt .tbody .tr .td.no-content {
+    text-align: center;
+}
+
+.dt .thead .tr .th {
+    line-height: 40px;
+}
+
+.dt .thead .tr .th span {
+    cursor: pointer;
+}
+
+.dt .thead .tr .th i.fa {
+    padding: 0 5px;
 }
