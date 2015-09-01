@@ -6,6 +6,7 @@ import Me from './me/index.react';
 import NotFound from './components/notfound.react';
 import React from 'react';
 import Todos from './todos/index.react';
+import Sysdig from './sysdig/index.react';
 import {DefaultRoute, NotFoundRoute, Route} from 'react-router';
 
 export default (
@@ -16,5 +17,6 @@ export default (
     <Route handler={Login} name="login" />
     <Route handler={Me} name="me" />
     <Route handler={Todos} name="todos" />
+    <Route handler={Sysdig} name="sysdig"/>
   </Route>
 );

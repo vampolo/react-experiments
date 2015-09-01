@@ -25,6 +25,7 @@ export default class Header extends Component {
           {!viewer &&
             <li><Link to="login">{header.login}</Link></li>
           }
+            <li><Link to="sysdig">{header.sysdig}</Link></li>
         </ul>
       </header>
     );
