@@ -11,8 +11,9 @@ import {createValidate} from '../validate';
 
 import * as authActions from '../auth/actions';
 import * as todosActions from '../todos/actions';
+import * as sysdigActions from '../sysdig/actions';
 
-const actions = [authActions, todosActions];
+const actions = [authActions, todosActions, sysdigActions];
 
 @flux(store)
 export default class App extends Component {
