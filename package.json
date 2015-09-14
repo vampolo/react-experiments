@@ -5,7 +5,8 @@
   "version": "10.0.0",
   "private": true,
   "scripts": {
-    "postinstall": "gulp build --production",
+    "postinstall": "npm run build-griddle && gulp build --production",
+    "build-griddle": "cd node_modules/griddle-react && npm install && grunt build",
     "start": "node src/server",
     "test": "gulp test"
   },
@@ -33,7 +34,7 @@
     "extract-text-webpack-plugin": "^0.8.0",
     "file-loader": "^0.8.1",
     "glob": "^5.0.13",
-    "griddle-react": "^0.2.14",
+    "griddle-react": "git://github.com/vampolo/Griddle.git#f4e189358e7da67f69a7765686bc6cdc4add8ad0",
     "gulp": "^3.8.10",
     "gulp-bg": "0.0.7",
     "gulp-eslint": "^1.0.0",
