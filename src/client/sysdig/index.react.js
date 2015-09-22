@@ -4,6 +4,7 @@ import React from 'react';
 import {FormattedHTMLMessage} from 'react-intl';
 import {Link} from 'react-router';
 import Griddle from 'griddle-react';
+import {Button} from 'react-bootstrap';
 
 const columns = ['evt.num', 'evt.cpu', 'evt.dir', 'evt.type'];
 
@@ -26,15 +27,18 @@ export default class Index extends Component {
 
       return (
       <DocumentTitle title={msg.title}>
-        <div className="home-page">
+        <div className="sysdig-page">
             <Griddle
-        columns={columns}
-        results={events}
-        showFilter={true}
-        showSettings={true}
-        enableInfiniteScroll={true}
-        useFixedHeader={true}
-        bodyHeight={400}/>
+          columns={columns}
+          results={events}
+          showFilter={true}
+          showSettings={true}
+          enableInfiniteScroll={true}
+          useFixedHeader={true}
+          bodyHeight={400}
+              />
+
+        <Button>Bootstrap test</Button>
        </div>
       </DocumentTitle>
     );
