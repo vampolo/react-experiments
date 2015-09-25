@@ -21,8 +21,10 @@
     "npm": "^3.0.0"
   },
   "dependencies": {
+    "babel-eslint": "^4.1.2",
     "eslint": "^1.4.1",
     "eslint-plugin-react": "^3.3.2",
-    "babel-eslint": "^4.1.2"
+    "griddle-react": "^0.2.14",
+    "react-bootstrap": "^0.25.2"
   }
 }
