@@ -7,7 +7,8 @@ export default {
       h1: `Home`,
       login: 'Login',
       me: 'Me (protected)',
-      todos: 'Todos'
+      todos: 'Todos',
+      sysdig: 'Sysdig'
     }
   },
   auth: {

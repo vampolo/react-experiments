@@ -5,6 +5,7 @@ import Me from './pages/me.react';
 import NotFound from './pages/notFound.react';
 import React from 'react';
 import Todos from './pages/todos.react';
+import Sysdig from './pages/sysdig.react';
 import {IndexRoute, Route} from 'react-router';
 
 export default function createRoutes(getState) {
@@ -22,6 +23,7 @@ export default function createRoutes(getState) {
       <Route component={Login} path="login" />
       <Route component={Me} onEnter={requireAuth} path="me" />
       <Route component={Todos} path="todos" />
+      <Route component={Sysdig} path="sysdig" />
       <Route component={NotFound} path="*" />
     </Route>
   );

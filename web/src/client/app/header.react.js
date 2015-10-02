@@ -24,6 +24,7 @@ export default class Header extends Component {
           {!viewer &&
             <li><Link activeClassName="active" to="/login">{msg.login}</Link></li>
           }
+          <li><Link activeClassName="active" to="/sysdig">{msg.sysdig}</Link></li>
         </ul>
       </header>
     );
