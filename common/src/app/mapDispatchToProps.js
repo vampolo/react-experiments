@@ -1,11 +1,13 @@
 import * as authActions from '../auth/actions';
 import * as todosActions from '../todos/actions';
+import * as sysdigActions from '../sysidg/actions';
 import {Map} from 'immutable';
 import {bindActionCreators} from 'redux';
 
 const actions = [
   authActions,
-  todosActions
+  todosActions,
+  sysdigActions
 ];
 
 export default function mapDispatchToProps(dispatch) {
